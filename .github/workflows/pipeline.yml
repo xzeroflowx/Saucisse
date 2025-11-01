@@ -1,1 +1,16 @@
+name: Vérifier le site web
+
+on: [push]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupère le code
+        uses: actions/checkout@v4
+
+      - name: Vérifie que les fichiers existent
+        run: |
+          test -f index.html && echo "index.html OK"
+          test -f style.css && echo "style.css OK"
 

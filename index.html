@@ -1,133 +1,568 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio professionnel - Étudiante BTS SIO en administration systèmes et réseaux">
-    <title>Mon Portfolio</title>
+    <title>Chloé Beruti - Portfolio BTS SIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-    </header>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="150" data-bs-smooth-scroll="true" tabindex="0">
 
-    <nav>
-        <ul>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#bts">BTS SIO</a></li>
-            <li><a href="#watts">Watts Electronics</a></li>
-            <li><a href="#veille">Veille technologique</a></li>
-            <li><a href="#competence">Tableau de compétences</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#apropos">
+                <i class="fas fa-code me-2"></i>Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">
+                            <i class="fas fa-user me-1"></i>À propos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bts">
+                            <i class="fas fa-graduation-cap me-1"></i>BTS SIO
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#veille">
+                            <i class="fas fa-search me-1"></i>Veille Tech
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">
+                            <i class="fas fa-tools me-1"></i>Compétences
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#entreprise">
+                            <i class="fas fa-building me-1"></i>Entreprise
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section id="apropos">
-            <h2>À propos</h2>
-            <p>Je suis étudiante en BTS SIO...</p>
-        </section>
-
-        <section id="bts">
-            <h2>BTS SIO</h2>
-
-            <h3>Présentation du BTS SIO</h3>
-            <p>Description de mes projets BTS...</p>
-
-            <h3>Épreuves du BTS</h3>
-            <div class="epreuves">
-                <article>
-                    <h4>Épreuve E4</h4>
-                    <p>Contenu...</p>
-                </article>
-                <article>
-                    <h4>Épreuve E5</h4>
-                    <p>Contenu...</p>
-                </article>
-                <article>
-                    <h4>Épreuve E6</h4>
-                    <p>Contenu...</p>
-                </article>
-                <article>
-                    <h4>Projet GSB</h4>
-                    <p>Contenu...</p>
-                </article>
+    <!-- Section À propos -->
+    <section id="apropos" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="profile-image-wrapper">
+                        <img src="ma-photo.jpg" alt="Chloé Beruti" class="profile-image">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h1 class="section-title">Chloé BERUTI</h1>
+                    <h2 class="hero-name">BTS SIO Option SISR</h2>
+                    <p class="hero-description">
+                        Je m'appelle Chloé Beruti, j'ai 24 ans et je prépare actuellement un BTS Services Informatiques aux Organisations (SIO), option SISR, en alternance chez Watts Electronics, filiale du groupe Watts Water.
+                    </p>
+                    <p class="hero-description">
+                        Au sein du service IT, j'interviens sur l'administration de systèmes Windows et Linux, la mise en place et maintenance des infrastructures réseau, ainsi que le support technique aux utilisateurs.
+                    </p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="watts">
-            <h2>Watts Electronics</h2>
+    <!-- Section BTS -->
+    <section id="bts">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h1 class="section-title">Présentation du BTS SIO</h1>
+                <p class="section-subtitle">Services Informatiques aux Organisations</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Option SLAM</h3>
+                        <p>Solutions Logicielles et Applications Métiers</p>
+                        <ul class="custom-list">
+                            <li>Développement d'applications</li>
+                            <li>Conception de bases de données</li>
+                            <li>Programmation orientée objet</li>
+                            <li>Gestion de projets informatiques</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Option SISR</h3>
+                        <p>Solutions d'Infrastructure, Systèmes et Réseaux</p>
+                        <ul class="custom-list">
+                            <li>Administration des systèmes</li>
+                            <li>Gestion des réseaux</li>
+                            <li>Cybersécurité</li>
+                            <li>Virtualisation et cloud</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h3>Présentation de l'entreprise</h3>
-            <p>Watts Electronics est une branche du groupe Watts Water Technologies...</p>
+    <!-- Section Veille Technologique -->
+    <section id="veille">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h1 class="section-title">Mes Veilles Technologiques</h1>
+                <p class="section-subtitle">Deux domaines d'innovation que je suis de près</p>
+            </div>
+            
+            <!-- Veille 1 : Robotique intelligente et cobots -->
+            <div class="mb-5">
+                <div class="content-card veille-principale">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                            <div class="veille-icon-large">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <h2 class="veille-title">
+                                <i class="fas fa-microchip me-2"></i>IA et Machine Learning embarqué dans les cobots et la robotique
+                            </h2>
+                            <p class="veille-description">
+                                La robotique collaborative (cobotique) révolutionne l'industrie en permettant aux robots de travailler 
+                                aux côtés des humains en toute sécurité. Ces robots intelligents, équipés de capteurs avancés et d'IA, 
+                                s'adaptent à leur environnement et apprennent de leurs interactions.
+                            </p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-star me-2 text-warning"></i>Points clés</h5>
+                                    <ul class="custom-list">
+                                        <li><strong>Intelligence artificielle intégrée</strong> pour l'apprentissage automatique</li>
+                                        <li><strong>Capteurs de sécurité avancés</strong> pour la détection de proximité</li>
+                                        <li><strong>Interface intuitive</strong> facilitant la programmation</li>
+                                        <li><strong>Flexibilité</strong> d'adaptation à différentes tâches</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-industry me-2 text-primary"></i>Applications</h5>
+                                    <ul class="custom-list">
+                                        <li>Industrie manufacturière et assemblage</li>
+                                        <li>Logistique et gestion d'entrepôts</li>
+                                        <li>Secteur médical et chirurgie assistée</li>
+                                        <li>Agriculture de précision</li>
+                                    </ul>
+                                </div>
+                            </div>
 
-            <h3>Domaine d'activité</h3>
-            <ul>
-                <li>Thermostats intelligents et systèmes de régulation</li>
-                <li>Systèmes connectés et domotiques pour la gestion d'énergie</li>
-                <li>Vannes de ventilo-convecteur et régulateurs multi-zones</li>
-                <li>Produits pour énergies renouvelables</li>
-                <li>Planchers chauffants et systèmes de climatisation</li>
-                <li>Composants d'instrumentation scientifique et technique</li>
-            </ul>
+                            <div class="veille-tech-tags mt-4">
+                                <span class="tech-badge">IA & Machine Learning</span>
+                                <span class="tech-badge">Vision par ordinateur</span>
+                                <span class="tech-badge">IoT industriel</span>
+                                <span class="tech-badge">ROS (Robot Operating System)</span>
+                                <span class="tech-badge">Capteurs intelligents</span>
+                            </div>
 
-            <h3>Mon activité au sein du service IT</h3>
-            <p>En tant qu'étudiante en alternance BTS SIO, j'ai l'opportunité...
-                Per rectoreque habet urgeret habet veterum Gerasam marte excursus Mediam tumore cum cautissimas
-                imperator Nabataeis ex oppida cum oportunos contunso varietate hanc et civitates haec conserta latere
-                atque nostris adtributo imperator oportunos quaedam contunso est murorum Mediam tumore quaedam inter
-                marte urgeret saltus varietate Parthos cum Gerasam repellendos quae legibus per obtemperare cautos marte
-                latere ad atque ex quoque et Gerasam castrisque conserta saltus opima nomine erexit oppida Parthos
-                contigua est haec conmerciorum latere pervigil et cum latere oppleta provinciae latere imperator
-                conserta castellis pervigil conpulit Traianus nostris Mediam Nabataeis conserta marte habet Gerasam
-                veterum quae conmerciorum vicinarum vicinarum alio.
-            </p>
+                            <div class="veille-stats mt-4">
+                                <div class="row text-center">
+                                    <div class="col-md-4">
+                                        <div class="stat-box">
+                                            <i class="fas fa-chart-line text-success"></i>
+                                            <h4>+30%</h4>
+                                            <p>Croissance annuelle du marché</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stat-box">
+                                            <i class="fas fa-cogs text-info"></i>
+                                            <h4>50%</h4>
+                                            <p>Réduction des coûts de production</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stat-box">
+                                            <i class="fas fa-shield-alt text-warning"></i>
+                                            <h4>100%</h4>
+                                            <p>Amélioration de la sécurité</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <h4>Principales responsabilités</h4>
-            <ul>
-                <li>Gestion et support des postes utilisateurs</li>
-                <li>Maintenance du réseau interne</li>
-                <li>Sécurisation du système d'information</li>
-                <li>Déploiement de nouveaux équipements</li>
-            </ul>
-        </section>
+            <!-- Veille 2 : Santé numérique et IoT médical -->
+            <div class="mb-5">
+                <div class="content-card veille-principale">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                            <div class="veille-icon-large health">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <h2 class="veille-title">
+                                <i class="fas fa-stethoscope me-2"></i>Santé Numérique et IoT Médical
+                            </h2>
+                            <p class="veille-description">
+                                L'Internet des Objets transforme le secteur de la santé en permettant la surveillance en temps réel, 
+                                le diagnostic à distance et la médecine personnalisée. Les dispositifs connectés révolutionnent 
+                                la prise en charge des patients et l'efficacité des systèmes de santé.
+                            </p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-star me-2 text-warning"></i>Innovations majeures</h5>
+                                    <ul class="custom-list">
+                                        <li><strong>Objets connectés médicaux</strong> (montres, capteurs, implants)</li>
+                                        <li><strong>Télémédecine</strong> et consultations à distance</li>
+                                        <li><strong>IA de diagnostic</strong> pour l'analyse d'images médicales</li>
+                                        <li><strong>Dossiers médicaux numériques</strong> sécurisés et partagés</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-hospital me-2 text-danger"></i>Bénéfices</h5>
+                                    <ul class="custom-list">
+                                        <li>Surveillance continue des patients chroniques</li>
+                                        <li>Détection précoce des pathologies</li>
+                                        <li>Réduction des hospitalisations</li>
+                                        <li>Médecine prédictive et préventive</li>
+                                    </ul>
+                                </div>
+                            </div>
 
-        <section id="veille">
-            <h2>Veille technologique</h2>
+                            <div class="veille-tech-tags mt-4">
+                                <span class="tech-badge">Objets connectés (IoT)</span>
+                                <span class="tech-badge">Big Data médical</span>
+                                <span class="tech-badge">Cloud Computing</span>
+                                <span class="tech-badge">Blockchain santé</span>
+                                <span class="tech-badge">Cybersécurité médicale</span>
+                            </div>
 
-            <article>
-                <h3>La robotique intelligente et les cobots</h3>
-                <p>Ma veille sur...n tant qu'étudiante en alternance BTS SIO, j'ai l'opportunité...
-                    Per rectoreque habet urgeret habet veterum Gerasam marte excursus Mediam tumore cum cautissimas
-                    imperator Nabataeis ex oppida cum oportunos contunso varietate hanc et civitates haec conserta
-                    latere
-                    atque nostris adtributo imperator oportunos quaedam contunso est murorum Mediam tumore quaedam inter
-                    marte urgeret saltus varietate Parthos cum Gerasam repellendos quae legibus per obtemperare cautos
-                    marte
-                    latere ad atque ex quoque et Gerasam castrisque conserta saltus opima nomine erexit oppida Parthos
-                    contigua est haec conmerciorum latere pervigil et cum latere oppleta provinciae latere imperator
-                    conserta castellis pervigil conpulit Traianus nostris Mediam Nabataeis conserta marte habet Gerasam
-                    veterum quae conmerciorum vicinarum vicinarum alio.</p>
-            </article>
+                            <div class="veille-stats mt-4">
+                                <div class="row text-center">
+                                    <div class="col-md-4">
+                                        <div class="stat-box">
+                                            <i class="fas fa-mobile-alt text-primary"></i>
+                                            <h4>50 Mds</h4>
+                                            <p>Objets IoT médicaux d'ici 2030</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stat-box">
+                                            <i class="fas fa-chart-line text-success"></i>
+                                            <h4>25%</h4>
+                                            <p>Réduction des coûts de santé</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stat-box">
+                                            <i class="fas fa-user-md text-info"></i>
+                                            <h4>70%</h4>
+                                            <p>Des hôpitaux utilisent l'IoT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <article>
-                <h3>Santé numérique et IoT médical</h3>
-                <p>Ma veille sur...</p>
-            </article>
-        </section>
+            <!-- Sources d'information -->
+            <div class="mt-5">
+                <div class="content-card">
+                    <h3><i class="fas fa-rss me-2"></i>Mes sources de veille</h3>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h5 class="text-primary mb-3">Sources générales</h5>
+                            <ul class="custom-list">
+                                <li><strong>IEEE Spectrum</strong> - Actualités en robotique et technologie</li>
+                                <li><strong>TechCrunch</strong> - Innovations technologiques</li>
+                                <li><strong>MIT Technology Review</strong> - Recherches avancées</li>
+                                <li><strong>Robotics Business Review</strong> - Industrie robotique</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-danger mb-3">Sources santé numérique</h5>
+                            <ul class="custom-list">
+                                <li><strong>Healthcare IT News</strong> - IT médical</li>
+                                <li><strong>MedTech Dive</strong> - Technologies médicales</li>
+                                <li><strong>Journal of Medical Internet Research</strong> - e-santé</li>
+                                <li><strong>Digital Health</strong> - Santé connectée</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <h5 class="text-secondary mb-3">Méthodes de veille</h5>
+                            <div class="veille-methods">
+                                <span class="method-badge"><i class="fas fa-rss me-1"></i>Agrégateurs RSS (Feedly)</span>
+                                <span class="method-badge"><i class="fab fa-twitter me-1"></i>Twitter/X (experts du domaine)</span>
+                                <span class="method-badge"><i class="fab fa-youtube me-1"></i>YouTube (conférences, démos)</span>
+                                <span class="method-badge"><i class="fab fa-linkedin me-1"></i>LinkedIn (publications professionnelles)</span>
+                                <span class="method-badge"><i class="fas fa-podcast me-1"></i>Podcasts technologiques</span>
+                                <span class="method-badge"><i class="fas fa-newspaper me-1"></i>Newsletters spécialisées</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="competence">
-            <h2>Tableau de compétences</h2>
-            <p>Mon tableau de compétences...</p>
-        </section>
-    </main>
+    <!-- Section Compétences -->
+    <section id="competences">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h1 class="section-title">Tableau de Compétences</h1>
+                <p class="section-subtitle">Technologies et outils maîtrisés</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server me-2"></i>Administration Système</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Windows Server</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Linux</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Active Directory</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <footer>
-        <p>&copy; 2025 Mon Portfolio</p>
+                <div class="col-lg-6">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-network-wired me-2"></i>Réseau & Infrastructure</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Configuration Réseau</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Virtualisation</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Sécurité Réseau</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools me-2"></i>Outils & Support</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Support Utilisateur</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Gestion des Incidents</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-comments me-2"></i>Compétences Transversales</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Travail d'équipe</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Documentation technique</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bouton de téléchargement du tableau Excel -->
+            <div class="text-center mt-5">
+                <div class="download-section">
+                    <h3><i class="fas fa-file-excel me-2"></i>Tableau de compétences complet</h3>
+                    <p class="mb-4">Téléchargez le tableau détaillé de toutes mes compétences au format Excel</p>
+                    <a href="tableau-competences.xlsx" download class="btn-download-excel">
+                        <i class="fas fa-download me-2"></i>Télécharger le tableau Excel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Entreprise -->
+    <section id="entreprise">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h1 class="section-title">Mon Entreprise</h1>
+                <p class="section-subtitle">Watts Electronics - Groupe Watts Water</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="content-card">
+                        <div class="card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Watts Electronics</h3>
+                        <p class="mb-4">
+                            En alternance au sein du service IT de Watts Electronics, filiale du groupe Watts Water, 
+                            je participe activement à la gestion et à l'amélioration de l'infrastructure informatique de l'entreprise.
+                        </p>
+                        
+                        <h4><i class="fas fa-tasks me-2"></i>Missions principales</h4>
+                        <ul class="custom-list">
+                            <li>Administration de serveurs Windows et Linux</li>
+                            <li>Mise en place et maintenance des infrastructures réseau</li>
+                            <li>Support technique et assistance aux utilisateurs</li>
+                            <li>Gestion et résolution d'incidents</li>
+                            <li>Maintenance du parc informatique</li>
+                        </ul>
+
+                        <h4 class="mt-4"><i class="fas fa-code me-2"></i>Technologies utilisées</h4>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Windows Server</span>
+                            <span class="tech-badge">Linux</span>
+                            <span class="tech-badge">Active Directory</span>
+                            <span class="tech-badge">VMware</span>
+                            <span class="tech-badge">Cisco</span>
+                            <span class="tech-badge">PowerShell</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h1 class="section-title">Me Contacter</h1>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour toute opportunité</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-wrapper">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="contact-info">
+                                    <i class="fas fa-envelope"></i>
+                                    <h4>Email</h4>
+                                    <p>chloe.beruti@exemple.com</p>
+                                    <a href="mailto:chloe.beruti@exemple.com" class="btn-contact">
+                                        <i class="fas fa-paper-plane me-2"></i>Envoyer un email
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-info">
+                                    <i class="fab fa-linkedin"></i>
+                                    <h4>LinkedIn</h4>
+                                    <p>Mon profil professionnel</p>
+                                    <a href="https://www.linkedin.com/in/chloe-beruti" target="_blank" class="btn-contact">
+                                        <i class="fab fa-linkedin me-2"></i>Voir mon profil
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2024 Chloé Beruti - Portfolio BTS SIO. Tous droits réservés.</p>
+                <p class="mb-0">Fait avec <i class="fas fa-heart text-danger"></i> et Bootstrap</p>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <!-- Bouton retour en haut -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

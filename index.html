@@ -3,566 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chloé Beruti - Portfolio BTS SIO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Chloé Beruti - Portfolio BTS SIO SISR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="150" data-bs-smooth-scroll="true" tabindex="0">
-
+<body>
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#apropos">
-                <i class="fas fa-code me-2"></i>Portfolio
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#apropos">
-                            <i class="fas fa-user me-1"></i>À propos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#bts">
-                            <i class="fas fa-graduation-cap me-1"></i>BTS SIO
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#veille">
-                            <i class="fas fa-search me-1"></i>Veille Tech
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#competences">
-                            <i class="fas fa-tools me-1"></i>Compétences
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#entreprise">
-                            <i class="fas fa-building me-1"></i>Entreprise
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            <i class="fas fa-envelope me-1"></i>Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;CB/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#entreprise">Entreprise</a></li>
+                <li><a href="#veille">Veille</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#bts">BTS SIO</a></li>
+                <li><a href="#cv">CV</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
         </div>
     </nav>
 
-    <!-- Section À propos -->
-    <section id="apropos" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                    <div class="profile-image-wrapper">
-                        <img src="ma-photo.jpg" alt="Chloé Beruti" class="profile-image">
-                    </div>
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-container fade-in">
+            <div class="hero-content">
+                <h1>Chloé <span class="highlight">Beruti</span></h1>
+                <p class="subtitle">Alternante BTS SIO option SISR</p>
+                <p class="tagline">Administratrice Réseaux & Systèmes chez Watts Electronics</p>
+                <div class="hero-cta">
+                    <a href="#apropos" class="btn btn-primary">Découvrir mon parcours →</a>
+                    <a href="cv.html" target="_blank" class="btn btn-secondary">Voir mon CV</a>
                 </div>
-                <div class="col-lg-7">
-                    <h1 class="section-title">Chloé BERUTI</h1>
-                    <h2 class="hero-name">BTS SIO Option SISR</h2>
-                    <p class="hero-description">
-                        Je m'appelle Chloé Beruti, j'ai 24 ans et je prépare actuellement un BTS Services Informatiques aux Organisations (SIO), option SISR, en alternance chez Watts Electronics, filiale du groupe Watts Water.
+            </div>
+            <div class="hero-image">
+                <img src="profil.jpeg" alt="Chloé Beruti">
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos">
+        <div class="section-container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content fade-in">
+                <p class="about-text">
+                    Je m'appelle <strong>Chloé Beruti</strong>, j'ai 24 ans et je prépare actuellement un <strong>BTS Services Informatiques aux Organisations (SIO)</strong>, option SISR, en alternance chez <strong>Watts Electronics</strong>, filiale du groupe Watts Water.
+                </p>
+                <p class="about-text">
+                    Au sein du service IT, j'interviens sur l'<strong>administration de systèmes Windows et Linux</strong>, la mise en place et maintenance des <strong>infrastructures réseau</strong>, ainsi que le <strong>support technique aux utilisateurs</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entreprise -->
+    <section id="entreprise">
+        <div class="section-container">
+            <h2 class="section-title">Watts Electronics</h2>
+            <div class="company-grid fade-in">
+                <div class="company-info">
+                    <h3>Mon entreprise d'alternance</h3>
+                    <p>
+                        <strong>Watts Electronics</strong>, marque du groupe Watts, est un des leaders mondiaux de la fourniture de solutions électroniques destinées aux applications <strong>Chauffage, Ventilation et Climatisation</strong>, tels que des thermostats et autres systèmes connectés.
                     </p>
-                    <p class="hero-description">
-                        Au sein du service IT, j'interviens sur l'administration de systèmes Windows et Linux, la mise en place et maintenance des infrastructures réseau, ainsi que le support technique aux utilisateurs.
+                    <p>
+                        Le siège social est situé à <strong>Rosière</strong> avec un site de production à <strong>Monastir en Tunisie</strong>.
                     </p>
+                </div>
+                <div class="company-details">
+                    <h4>Domaines d'expertise</h4>
+                    <ul>
+   
+                        <li>Produits connectés et applications</li>
+                        <li>Plancher chauffant et radiateur électriques</li>
+                        <li>Plancher chauffant vecteur eau chaude</li>
+                        <li>Énergies renouvelables</li>
+                        <li>Ventilo-convecteur, climatisation et ventilation</li>
+                        <li>Instrumentation</li>
+                        <li>Chaudières et pompes à chaleur</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section BTS -->
-    <section id="bts">
-        <div class="container">
-            <div class="section-header text-center mb-5">
-                <h1 class="section-title">Présentation du BTS SIO</h1>
-                <p class="section-subtitle">Services Informatiques aux Organisations</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="info-card">
-                        <div class="info-card-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Option SLAM</h3>
-                        <p>Solutions Logicielles et Applications Métiers</p>
-                        <ul class="custom-list">
-                            <li>Développement d'applications</li>
-                            <li>Conception de bases de données</li>
-                            <li>Programmation orientée objet</li>
-                            <li>Gestion de projets informatiques</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="info-card">
-                        <div class="info-card-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <h3>Option SISR</h3>
-                        <p>Solutions d'Infrastructure, Systèmes et Réseaux</p>
-                        <ul class="custom-list">
-                            <li>Administration des systèmes</li>
-                            <li>Gestion des réseaux</li>
-                            <li>Cybersécurité</li>
-                            <li>Virtualisation et cloud</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Veille Technologique -->
+    <!-- Veille Informatique -->
     <section id="veille">
-        <div class="container">
-            <div class="section-header text-center mb-5">
-                <h1 class="section-title">Mes Veilles Technologiques</h1>
-                <p class="section-subtitle">Deux domaines d'innovation que je suis de près</p>
-            </div>
-            
-            <!-- Veille 1 : Robotique intelligente et cobots -->
-            <div class="mb-5">
-                <div class="content-card veille-principale">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 text-center mb-4 mb-lg-0">
-                            <div class="veille-icon-large">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <h2 class="veille-title">
-                                <i class="fas fa-microchip me-2"></i>IA et Machine Learning embarqué dans les cobots et la robotique
-                            </h2>
-                            <p class="veille-description">
-                                La robotique collaborative (cobotique) révolutionne l'industrie en permettant aux robots de travailler 
-                                aux côtés des humains en toute sécurité. Ces robots intelligents, équipés de capteurs avancés et d'IA, 
-                                s'adaptent à leur environnement et apprennent de leurs interactions.
-                            </p>
-                            
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <h5><i class="fas fa-star me-2 text-warning"></i>Points clés</h5>
-                                    <ul class="custom-list">
-                                        <li><strong>Intelligence artificielle intégrée</strong> pour l'apprentissage automatique</li>
-                                        <li><strong>Capteurs de sécurité avancés</strong> pour la détection de proximité</li>
-                                        <li><strong>Interface intuitive</strong> facilitant la programmation</li>
-                                        <li><strong>Flexibilité</strong> d'adaptation à différentes tâches</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5><i class="fas fa-industry me-2 text-primary"></i>Applications</h5>
-                                    <ul class="custom-list">
-                                        <li>Industrie manufacturière et assemblage</li>
-                                        <li>Logistique et gestion d'entrepôts</li>
-                                        <li>Secteur médical et chirurgie assistée</li>
-                                        <li>Agriculture de précision</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="veille-tech-tags mt-4">
-                                <span class="tech-badge">IA & Machine Learning</span>
-                                <span class="tech-badge">Vision par ordinateur</span>
-                                <span class="tech-badge">IoT industriel</span>
-                                <span class="tech-badge">ROS (Robot Operating System)</span>
-                                <span class="tech-badge">Capteurs intelligents</span>
-                            </div>
-
-                            <div class="veille-stats mt-4">
-                                <div class="row text-center">
-                                    <div class="col-md-4">
-                                        <div class="stat-box">
-                                            <i class="fas fa-chart-line text-success"></i>
-                                            <h4>+30%</h4>
-                                            <p>Croissance annuelle du marché</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="stat-box">
-                                            <i class="fas fa-cogs text-info"></i>
-                                            <h4>50%</h4>
-                                            <p>Réduction des coûts de production</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="stat-box">
-                                            <i class="fas fa-shield-alt text-warning"></i>
-                                            <h4>100%</h4>
-                                            <p>Amélioration de la sécurité</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="section-container">
+            <h2 class="section-title">Veilles Informatique</h2>
+            <div class="veille-grid fade-in">
+                <!-- Edge Computing -->
+                <div class="veille-card">
+                    <h3>Edge Computing</h3>
+                    
+                    <div class="veille-section">
+                        <h4>Définition et principe</h4>
+                        <p>L'Edge Computing est une architecture informatique distribuée qui rapproche le traitement des données de leur source de génération. Contrairement au Cloud Computing centralisé, l'Edge Computing déploie des capacités de calcul, de stockage et d'analyse directement au plus près des capteurs IoT, terminaux et équipements connectés.</p>
+                        <p><strong>Différence Cloud vs Edge :</strong> Le Cloud centralise les données dans des datacenters distants, tandis que l'Edge les traite localement, réduisant ainsi la latence et la dépendance à la connectivité réseau.</p>
                     </div>
+
+                    <div class="veille-section">
+                        <h4>Enjeux pour une organisation</h4>
+                        <ul>
+                            <li><strong>Performance et réactivité :</strong> Réduction drastique de la latence (< 10ms) essentielle pour les applications temps réel comme la maintenance prédictive, la conduite autonome ou la réalité augmentée</li>
+                            <li><strong>Optimisation des coûts :</strong> Diminution de la bande passante réseau jusqu'à 80% en traitant les données localement et en ne remontant que les informations essentielles vers le Cloud</li>
+                            <li><strong>Fiabilité et continuité :</strong> Fonctionnement autonome même en cas de perte de connexion Internet, garantissant la continuité des opérations critiques</li>
+                            <li><strong>Sécurité et confidentialité :</strong> Les données sensibles restent traitées localement, limitant leur exposition lors des transferts réseau. Conformité RGPD facilitée par le traitement local des données personnelles</li>
+                            <li><strong>Nouveaux défis :</strong> Multiplication des surfaces d'attaque potentielles, nécessité de sécuriser chaque nœud Edge, complexité accrue de la gestion distribuée</li>
+                        </ul>
+                    </div>
+
+                    <div class="veille-section">
+                        <h4>Cas d'usage concrets</h4>
+                        <ul>
+                            <li><strong>Industrie 4.0 :</strong> Surveillance en temps réel de chaînes de production avec analyse vidéo locale pour détecter les défauts de fabrication instantanément. Exemple : détection de pièces défectueuses à 60 images/seconde sans latence cloud</li>
+                            <li><strong>Maintenance prédictive :</strong> Analyse des vibrations et températures de machines industrielles via des passerelles Edge qui détectent les anomalies et déclenchent des alertes avant la panne</li>
+                            <li><strong>Smart Cities :</strong> Gestion intelligente du trafic avec traitement local des flux vidéo pour optimiser les feux de circulation en temps réel sans surcharger les réseaux</li>
+                            <li><strong>Retail :</strong> Analyse comportementale en magasin avec comptage de personnes, parcours clients et gestion des stocks en temps réel</li>
+                            <li><strong>Santé :</strong> Dispositifs médicaux connectés traitant localement les données biométriques pour des alertes instantanées en cas d'anomalie vitale</li>
+                        </ul>
+                    </div>
+
+                    <div class="veille-section">
+                        <h4>Technologies et acteurs</h4>
+                        <p><strong>Solutions matérielles :</strong> Passerelles IoT industrielles (Dell Edge Gateway, HPE Edgeline), serveurs Edge compacts, box industrielles durcies</p>
+                        <p><strong>Plateformes logicielles :</strong> Azure IoT Edge, AWS IoT Greengrass, Google Cloud IoT Edge, solutions SCADA modernes avec capacités Edge</p>
+                        <p><strong>Orchestration :</strong> Kubernetes (K3s pour l'Edge), Docker pour la conteneurisation des applications Edge</p>
+                    </div>
+
+                    <div class="veille-section">
+                        <h4>Outils de veille utilisés</h4>
+                        <p>Articles spécialisés (IoT For All, Edge Computing News), documentation technique des constructeurs, webinaires et conférences (IoT World, Edge Computing World), forums techniques et communautés GitHub</p>
+                    </div>
+
+                    
+                </div>
+
+                <!-- MDM -->
+                <div class="veille-card">
+                    <h3>MDM - Mobile Device Management</h3>
+                    
+                    <div class="veille-section">
+                        <h4>Définition et contexte</h4>
+                        <p>Le Mobile Device Management (MDM) est une solution centralisée de gestion du cycle de vie complet des terminaux mobiles (smartphones, tablettes, laptops) au sein d'une organisation. Face à l'explosion du télétravail et de la mobilité professionnelle, le MDM est devenu un pilier essentiel de la stratégie IT.</p>
+                        <p>Il s'inscrit dans une approche plus globale d'UEM (Unified Endpoint Management) visant à gérer tous les points d'accès au système d'information, quel que soit le device ou le système d'exploitation.</p>
+                    </div>
+
+                    <div class="veille-section">
+                        <h4>Enjeux stratégiques et fonctionnels</h4>
+                        <ul>
+                            <li><strong>Sécurité des données d'entreprise :</strong> Chiffrement automatique des données, conteneurisation (séparation hermétique données pro/perso), effacement à distance en cas de perte/vol, application de politiques de mots de passe complexes, détection de jailbreak/root</li>
+                            <li><strong>Gestion centralisée du parc mobile :</strong> Inventaire automatique temps réel (OS, version, IMEI, apps installées), déploiement silencieux d'applications métier, mise à jour forcée des OS et apps critiques, configuration automatique des profils Wi-Fi/VPN/email</li>
+                            <li><strong>Conformité réglementaire :</strong> Respect du RGPD avec traçabilité des données et droit à l'effacement, conformité ISO 27001, audit et reporting pour les certifications</li>
+                            <li><strong>Productivité et support :</strong> Onboarding simplifié des nouveaux collaborateurs, résolution proactive de problèmes (alertes batterie, espace disque), support à distance sans intervention physique</li>
+                            <li><strong>Gestion du BYOD :</strong> Équilibre entre sécurité entreprise et respect de la vie privée, conteneurisation des données professionnelles sur devices personnels</li>
+                        </ul>
+                    </div>
+
+                    <div class="veille-section">
+                        <h4>Principales fonctionnalités MDM</h4>
+                        <ul>
+                            <li><strong>Enrôlement :</strong> Zero-touch enrollment (DEP Apple, Android Enterprise), inscription simplifiée via portail ou QR code</li>
+                            <li><strong>Politiques de sécurité :</strong> Restriction d'apps, blocage de fonctionnalités (screenshot, copier/coller, caméra selon contexte), géofencing avec actions automatiques</li>
+                            <li><strong>Gestion des applications :</strong> App Store entreprise privé, distribution silencieuse d'apps, gestion des licences VPP (Volume Purchase Program)</li>
+                            <li><strong>Configuration réseau :</strong> Déploiement automatique de certificats, profils VPN on-demand, authentification 802.1X sur Wi-Fi entreprise</li>
+                            <li><strong>Monitoring et alertes :</strong> Dashboard centralisé, alertes de non-conformité, rapports d'utilisation et de sécurité</li>
+                        </ul>
+                    </div>
+
+                    <div class="veille-section">
+                        <h4>Solutions du marché</h4>
+                        <div>
+                            <span class="tools-tag">Microsoft Intune</span>
+                            <span class="tools-tag">VMware Workspace ONE</span>
+                            <span class="tools-tag">MobileIron (Ivanti)</span>
+                            <span class="tools-tag">Jamf Pro (Apple)</span>
+                            <span class="tools-tag">Google Workspace</span>
+                        </div>
+                        <p style="margin-top: 1rem;"><strong>Intune en pratique :</strong> Solution cloud Microsoft intégrée à Entra ID (ex-Azure AD). Permet l'enrôlement automatique des devices Windows/iOS/Android, déploiement de profils de configuration (Wi-Fi entreprise, VPN, certificats), conditional access avec authentification MFA, protection des apps avec chiffrement sélectif, portail d'entreprise pour self-service.</p>
+                    </div>
+
+                    <div class="veille-section">
+                        <h4>Cas d'usage en entreprise</h4>
+                        <ul>
+                            <li><strong>Scénario 1 - Nouvel arrivant :</strong> Le collaborateur reçoit son iPhone neuf, le device se configure automatiquement via DEP, toutes les apps métier sont installées silencieusement, les profils Wi-Fi/VPN sont déployés, l'accès email est automatique → Prêt en 15 minutes</li>
+                            <li><strong>Scénario 2 - Perte de device :</strong> Un commercial perd son smartphone avec des données clients. Le service IT localise le device via MDM, verrouille l'appareil à distance, puis efface toutes les données d'entreprise sans toucher aux données personnelles</li>
+                            <li><strong>Scénario 3 - Mise en conformité :</strong> Une faille de sécurité est découverte sur iOS 16.2. Le MDM détecte tous les devices non à jour, envoie des notifications de mise à jour, et après un délai, force l'installation. Reporting de conformité pour la direction</li>
+                        </ul>
+                    </div>
+
+                    <div class="veille-section">
+                        <h4>Outils de veille et sources</h4>
+                        <p>Documentation officielle Microsoft (Intune), VMware, blogs spécialisés (MobileIron Community, MacAdmins Slack), newsletters IT Pro (Petri IT, 4sysops), conférences Microsoft Ignite, forums Reddit r/Intune et r/sysadmin, certifications (MS-102, CompTIA Mobility+)</p>
+                    </div>
+
+                   
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Veille 2 : Santé numérique et IoT médical -->
-            <div class="mb-5">
-                <div class="content-card veille-principale">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 text-center mb-4 mb-lg-0">
-                            <div class="veille-icon-large health">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <h2 class="veille-title">
-                                <i class="fas fa-stethoscope me-2"></i>Santé Numérique et IoT Médical
-                            </h2>
-                            <p class="veille-description">
-                                L'Internet des Objets transforme le secteur de la santé en permettant la surveillance en temps réel, 
-                                le diagnostic à distance et la médecine personnalisée. Les dispositifs connectés révolutionnent 
-                                la prise en charge des patients et l'efficacité des systèmes de santé.
-                            </p>
-                            
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <h5><i class="fas fa-star me-2 text-warning"></i>Innovations majeures</h5>
-                                    <ul class="custom-list">
-                                        <li><strong>Objets connectés médicaux</strong> (montres, capteurs, implants)</li>
-                                        <li><strong>Télémédecine</strong> et consultations à distance</li>
-                                        <li><strong>IA de diagnostic</strong> pour l'analyse d'images médicales</li>
-                                        <li><strong>Dossiers médicaux numériques</strong> sécurisés et partagés</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5><i class="fas fa-hospital me-2 text-danger"></i>Bénéfices</h5>
-                                    <ul class="custom-list">
-                                        <li>Surveillance continue des patients chroniques</li>
-                                        <li>Détection précoce des pathologies</li>
-                                        <li>Réduction des hospitalisations</li>
-                                        <li>Médecine prédictive et préventive</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="veille-tech-tags mt-4">
-                                <span class="tech-badge">Objets connectés (IoT)</span>
-                                <span class="tech-badge">Big Data médical</span>
-                                <span class="tech-badge">Cloud Computing</span>
-                                <span class="tech-badge">Blockchain santé</span>
-                                <span class="tech-badge">Cybersécurité médicale</span>
-                            </div>
-
-                            <div class="veille-stats mt-4">
-                                <div class="row text-center">
-                                    <div class="col-md-4">
-                                        <div class="stat-box">
-                                            <i class="fas fa-mobile-alt text-primary"></i>
-                                            <h4>50 Mds</h4>
-                                            <p>Objets IoT médicaux d'ici 2030</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="stat-box">
-                                            <i class="fas fa-chart-line text-success"></i>
-                                            <h4>25%</h4>
-                                            <p>Réduction des coûts de santé</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="stat-box">
-                                            <i class="fas fa-user-md text-info"></i>
-                                            <h4>70%</h4>
-                                            <p>Des hôpitaux utilisent l'IoT</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Tableau de compétences -->
+    <section id="competences">
+        <div class="section-container">
+            <h2 class="section-title">Tableau de Compétences</h2>
+            <div class="competences-content fade-in">
+                <p>Découvrez l'ensemble de mes compétences techniques acquises durant ma formation BTS SIO SISR et mon alternance.</p>
+                <a href="TABLAU.ods" download class="download-btn">
+                    <span class="download-icon">⬇</span>
+                    Télécharger mon tableau de compétences
+                </a>
             </div>
+        </div>
+    </section>
 
-            <!-- Sources d'information -->
-            <div class="mt-5">
-                <div class="content-card">
-                    <h3><i class="fas fa-rss me-2"></i>Mes sources de veille</h3>
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <h5 class="text-primary mb-3">Sources générales</h5>
-                            <ul class="custom-list">
-                                <li><strong>IEEE Spectrum</strong> - Actualités en robotique et technologie</li>
-                                <li><strong>TechCrunch</strong> - Innovations technologiques</li>
-                                <li><strong>MIT Technology Review</strong> - Recherches avancées</li>
-                                <li><strong>Robotics Business Review</strong> - Industrie robotique</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h5 class="text-danger mb-3">Sources santé numérique</h5>
-                            <ul class="custom-list">
-                                <li><strong>Healthcare IT News</strong> - IT médical</li>
-                                <li><strong>MedTech Dive</strong> - Technologies médicales</li>
-                                <li><strong>Journal of Medical Internet Research</strong> - e-santé</li>
-                                <li><strong>Digital Health</strong> - Santé connectée</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-12">
-                            <h5 class="text-secondary mb-3">Méthodes de veille</h5>
-                            <div class="veille-methods">
-                                <span class="method-badge"><i class="fas fa-rss me-1"></i>Agrégateurs RSS (Feedly)</span>
-                                <span class="method-badge"><i class="fab fa-twitter me-1"></i>Twitter/X (experts du domaine)</span>
-                                <span class="method-badge"><i class="fab fa-youtube me-1"></i>YouTube (conférences, démos)</span>
-                                <span class="method-badge"><i class="fab fa-linkedin me-1"></i>LinkedIn (publications professionnelles)</span>
-                                <span class="method-badge"><i class="fas fa-podcast me-1"></i>Podcasts technologiques</span>
-                                <span class="method-badge"><i class="fas fa-newspaper me-1"></i>Newsletters spécialisées</span>
-                            </div>
-                        </div>
+    <!-- BTS SIO -->
+    <section id="bts">
+        <div class="section-container">
+            <h2 class="section-title">Présentation du BTS SIO</h2>
+            <div class="bts-content fade-in">
+                <div class="bts-card">
+                    <h3>BTS SIO - Qu'est-ce que c'est ?</h3>
+                    <p>
+                        Le <strong>BTS Services Informatiques aux Organisations</strong> est un diplôme national de niveau Bac+2 qui forme des techniciens capables de gérer le parc informatique d'une organisation et d'accompagner les utilisateurs.
+                    </p>
+                    <p>
+                        Il se décline en deux options :
+                    </p>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--accent);">▹</span>
+                            <strong>SISR</strong> : Solutions d'Infrastructure, Systèmes et Réseaux
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--accent);">▹</span>
+                            <strong>SLAM</strong> : Solutions Logicielles et Applications Métiers
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bts-card">
+                    <h3>Option SISR - Mon choix</h3>
+                    <p>
+                        L'option <strong>SISR</strong> forme des professionnels capables d'installer, administrer et maintenir les infrastructures systèmes et réseaux d'une organisation.
+                    </p>
+                    <p><strong>Compétences développées :</strong></p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Administration systèmes</span>
+                        <span class="skill-tag">Gestion des réseaux</span>
+                        <span class="skill-tag">Virtualisation</span>
+                        <span class="skill-tag">Sécurité informatique</span>
+                        <span class="skill-tag">Support utilisateurs</span>
+                        <span class="skill-tag">Supervision</span>
+                        <span class="skill-tag">Bases de données</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Compétences -->
-    <section id="competences">
-        <div class="container">
-            <div class="section-header text-center mb-5">
-                <h1 class="section-title">Tableau de Compétences</h1>
-                <p class="section-subtitle">Technologies et outils maîtrisés</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-server me-2"></i>Administration Système</h3>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Windows Server</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
+    <!-- CV -->
+    <section id="cv">
+        <div class="section-container">
+            <h2 class="section-title">Mon CV</h2>
+            <div class="cv-content fade-in">
+                <p>Consultez mon curriculum vitae complet pour découvrir mon parcours détaillé.</p>
+                
+                <div class="cv-preview">
+                    <h3>Chloé Beruti</h3>
+                    <p style="color: var(--accent); font-weight: 600; margin-bottom: 2rem;">Alternante BTS SIO option SISR | Administratrice Réseaux & Systèmes</p>
+                    
+                    <div class="cv-details">
+                        <div class="cv-detail-item">
+                            <strong>Contact</strong>
+                            <p>07 70 33 95 76</p>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6f0d0a1d1a1b060c0703000a2f08020e0603410c0002">[email&#160;protected]</a></p>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Linux</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
+                        <div class="cv-detail-item">
+                            <strong>Localisation</strong>
+                            <p>Yssingeaux 43200</p>
+                            <p>Permis B</p>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Active Directory</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
+                        <div class="cv-detail-item">
+                            <strong>Formation actuelle</strong>
+                            <p>BTS SIO SISR</p>
+                            <p>2024 - 2026</p>
+                        </div>
+                        <div class="cv-detail-item">
+                            <strong>Entreprise</strong>
+                            <p>Watts Electronics</p>
+                            <p>Service IT</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-network-wired me-2"></i>Réseau & Infrastructure</h3>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Configuration Réseau</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Virtualisation</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Sécurité Réseau</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-tools me-2"></i>Outils & Support</h3>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Support Utilisateur</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Gestion des Incidents</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-comments me-2"></i>Compétences Transversales</h3>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Travail d'équipe</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span>Documentation technique</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bouton de téléchargement du tableau Excel -->
-            <div class="text-center mt-5">
-                <div class="download-section">
-                    <h3><i class="fas fa-file-excel me-2"></i>Tableau de compétences complet</h3>
-                    <p class="mb-4">Téléchargez le tableau détaillé de toutes mes compétences au format Excel</p>
-                    <a href="tableau-competences.xlsx" download class="btn-download-excel">
-                        <i class="fas fa-download me-2"></i>Télécharger le tableau Excel
+                <div class="cv-buttons">
+                    <a href="cv.html" target="_blank" class="download-btn">
+                        <span class="download-icon">📄</span>
+                        Voir mon CV complet
+                    </a>
+                    <a href="cv_chloe_beruti.pdf" download class="download-btn">
+                        <span class="download-icon">⬇</span>
+                        Télécharger en PDF
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Entreprise -->
-    <section id="entreprise">
-        <div class="container">
-            <div class="section-header text-center mb-5">
-                <h1 class="section-title">Mon Entreprise</h1>
-                <p class="section-subtitle">Watts Electronics - Groupe Watts Water</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="content-card">
-                        <div class="card-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h3>Watts Electronics</h3>
-                        <p class="mb-4">
-                            En alternance au sein du service IT de Watts Electronics, filiale du groupe Watts Water, 
-                            je participe activement à la gestion et à l'amélioration de l'infrastructure informatique de l'entreprise.
-                        </p>
-                        
-                        <h4><i class="fas fa-tasks me-2"></i>Missions principales</h4>
-                        <ul class="custom-list">
-                            <li>Administration de serveurs Windows et Linux</li>
-                            <li>Mise en place et maintenance des infrastructures réseau</li>
-                            <li>Support technique et assistance aux utilisateurs</li>
-                            <li>Gestion et résolution d'incidents</li>
-                            <li>Maintenance du parc informatique</li>
-                        </ul>
-
-                        <h4 class="mt-4"><i class="fas fa-code me-2"></i>Technologies utilisées</h4>
-                        <div class="tech-badges">
-                            <span class="tech-badge">Windows Server</span>
-                            <span class="tech-badge">Linux</span>
-                            <span class="tech-badge">Active Directory</span>
-                            <span class="tech-badge">VMware</span>
-                            <span class="tech-badge">Cisco</span>
-                            <span class="tech-badge">PowerShell</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-header text-center mb-5">
-                <h1 class="section-title">Me Contacter</h1>
-                <p class="section-subtitle">N'hésitez pas à me contacter pour toute opportunité</p>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="contact-wrapper">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="contact-info">
-                                    <i class="fas fa-envelope"></i>
-                                    <h4>Email</h4>
-                                    <p>chloe.beruti@exemple.com</p>
-                                    <a href="mailto:chloe.beruti@exemple.com" class="btn-contact">
-                                        <i class="fas fa-paper-plane me-2"></i>Envoyer un email
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact-info">
-                                    <i class="fab fa-linkedin"></i>
-                                    <h4>LinkedIn</h4>
-                                    <p>Mon profil professionnel</p>
-                                    <a href="https://www.linkedin.com/in/chloe-beruti" target="_blank" class="btn-contact">
-                                        <i class="fab fa-linkedin me-2"></i>Voir mon profil
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="text-center">
-                <p>&copy; 2024 Chloé Beruti - Portfolio BTS SIO. Tous droits réservés.</p>
-                <p class="mb-0">Fait avec <i class="fas fa-heart text-danger"></i> et Bootstrap</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bouton retour en haut -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+    <footer>
+        <div class="section-container">
+            <p>&copy; 2025 Chloé Beruti - Portfolio BTS SIO SISR</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Tous droits réservés</p>
+            <div class="social-links">
+                <a href="/cdn-cgi/l/email-protection#b3d1d6c1c6c7dad0dbdfdcd6f3d4ded2dadf9dd0dcde">📧 Email</

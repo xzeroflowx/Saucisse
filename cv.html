@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Chloé Beruti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* En-tête */
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 50px 40px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .age-text {
+            color: white;
+            font-size: 1.1em;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .photo-placeholder {
+            width: 180px;
+            height: 220px;
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .header-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info span {
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-info span::before {
+            content: "●";
+            color: #f97316;
+        }
+
+        /* Corps principal */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0;
+        }
+
+        /* Sidebar gauche */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            border-right: 3px solid #0f172a;
+        }
+
+        .sidebar h2 {
+            color: #0f172a;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f97316;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .sidebar section {
+            margin-bottom: 35px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.95em;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .sidebar li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #0f172a;
+            font-weight: bold;
+        }
+
+        .skill-category {
+            margin-bottom: 20px;
+        }
+
+        .skill-category strong {
+            color: #0f172a;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        .skill-item {
+            font-size: 0.9em;
+            color: #000;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        /* Contenu principal droit */
+        .content {
+            padding: 40px 40px;
+        }
+
+        .content h2 {
+            color: #0f172a;
+            font-size: 1.6em;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f97316;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .experience-item, .formation-item {
+            margin-bottom: 30px;
+            padding-left: 25px;
+            border-left: 3px solid #f97316;
+            position: relative;
+        }
+
+        .experience-item::before, .formation-item::before {
+            content: "";
+            position: absolute;
+            left: -7px;
+            top: 5px;
+            width: 11px;
+            height: 11px;
+            background: #0f172a;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 0 0 2px #f97316;
+        }
+
+        .experience-item h3, .formation-item h3 {
+            color: #0f172a;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .period {
+            color: #333;
+            font-size: 0.9em;
+            font-style: italic;
+            margin-bottom: 8px;
+            display: inline-block;
+            background: #fff3e0;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .company {
+            color: #222;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #111;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+
+        .highlight-box {
+            background: #fff3e0;
+            border-left: 4px solid #f97316;
+            padding: 15px 20px;
+            margin: 0 0 30px 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box strong {
+            color: #0f172a;
+            font-size: 1.05em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                border-right: none;
+                border-bottom: 3px solid #0f172a;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .photo-placeholder {
+                width: 150px;
+                height: 180px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête -->
+        <div class="header">
+            <div class="photo-container">
+                <div class="photo-placeholder">
+                    <img src="profil.jpeg" alt="Chloé Beruti">
+                </div>
+                <div class="age-text">24 ans</div>
+            </div>
+            <div class="header-content">
+                <h1>CHLOÉ BERUTI</h1>
+                <p class="subtitle">Alternante BTS SIO option SISR | Administratrice Réseaux & Systèmes</p>
+                <div class="contact-info">
+                    <span>07 70 33 95 76</span>
+                    <span>berutichloe@gmail.com</span>
+                    <span>Yssingeaux 43200</span>
+                    <span>Permis B</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenu principal -->
+        <div class="main-content">
+            <!-- Sidebar gauche -->
+            <aside class="sidebar">
+                <!-- Compétences techniques -->
+                <section>
+                    <h2>Compétences</h2>
+                    
+                    <div class="skill-category">
+                        <strong>Programmation</strong>
+                        <div class="skill-item">Python, C, Assembleur</div>
+                        <div class="skill-item">JavaScript, HTML5, CSS, PHP</div>
+                        <div class="skill-item">Bash & PowerShell</div>
+                        <div class="skill-item">Git / GitHub</div>
+                        <div class="skill-item">Docker</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <strong>Bases de données</strong>
+                        <div class="skill-item">Administration MariaDB/MySQL</div>
+                        <div class="skill-item">Redondance et haute disponibilité</div>
+                        <div class="skill-item">KeepAlived, HAProxy</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <strong>Systèmes & Admin</strong>
+                        <div class="skill-item">Windows Server & Linux</div>
+                        <div class="skill-item">Virtualisation (Nutanix/Proxmox)</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <strong>Réseaux</strong>
+                        <div class="skill-item">Configuration routeurs/switchs</div>
+                        <div class="skill-item">VLANs - Routage dynamique</div>
+                        <div class="skill-item">Services réseau</div>
+                    </div>
+                </section>
+
+                <!-- Langues -->
+                <section>
+                    <h2>Langues</h2>
+                    <ul>
+                        <li><strong>Anglais B2</strong><br>TOEIC 890/990</li>
+                    </ul>
+                </section>
+
+                <!-- Atouts -->
+                <section>
+                    <h2>Atouts</h2>
+                    <ul>
+                        <li>Travail d'équipe</li>
+                        <li>Minutie & Rigueur</li>
+                        <li>Sens du service</li>
+                        <li>Gestion de projet</li>
+                    </ul>
+                </section>
+
+                <!-- Centres d'intérêt -->
+                <section>
+                    <h2>Intérêts</h2>
+                    <ul>
+                        <li>Sports de combat</li>
+                        <li>Dessin</li>
+                        <li>Jeux vidéos</li>
+                        <li>Informatique</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Contenu droit -->
+            <main class="content">
+                <!-- Expériences -->
+                <section>
+                    <h2>Expériences Professionnelles</h2>
+
+                    <div class="experience-item">
+                        <h3>Technicienne Informatique - Alternance</h3>
+                        <span class="period">Septembre 2024 - En cours</span>
+                        <p class="company">Watts Electronics - Service IT</p>
+                        <p class="description">Alternance en BTS SIO option SISR. Administration des systèmes et réseaux, support technique, gestion de l'infrastructure informatique et participation aux projets du service IT.</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Équipière Polyvalente</h3>
+                        <span class="period">Novembre 2024 - Avril 2025 (5 mois)</span>
+                        <p class="company">McDonald's - Yssingeaux</p>
+                        <p class="description">Job étudiant permettant de développer mes compétences en service client et travail d'équipe dans un environnement dynamique.</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Équipière Polyvalente puis Formatrice</h3>
+                        <span class="period">Juillet 2021 - Août 2024</span>
+                        <p class="company">McDonald's - La Fouillouse 42480</p>
+                        <p class="description">Débutée à temps partiel en tant qu'équipière polyvalente (juillet 2021), puis promue Formatrice à partir du 1er mars 2022. Formation des nouvelles recrues et gestion d'équipe.</p>
+                    </div>
+                </section>
+
+                <!-- Formations -->
+                <section>
+                    <h2>Formations</h2>
+
+                    <div class="formation-item">
+                        <h3>BTS SIO option SISR (en cours)</h3>
+                        <span class="period">2024 - 2026</span>
+                        <p class="company">Pôle Formation CFAI AFPI LDA - Saint-Étienne </p>
+                        <p class="description">Services Informatiques aux Organisations - Solutions d'Infrastructure, Systèmes et Réseaux en alternance.</p>
+                    </div>
+
+                    <div class="formation-item">
+                        <h3>Licence Informatique L1 & L2</h3>
+                        <span class="period">2021 - 2024</span>
+                        <p class="company">Université Jean Monnet - Saint-Étienne</p>
+                        <p class="description">Acquisition de bases solides en développement web, programmation, bases de données et gestion de projet. Réalisation de nombreux projets informatiques en équipe et en autonomie.</p>
+                    </div>
+
+                    <div class="formation-item">
+                        <h3>Baccalauréat Série ES</h3>
+                        <span class="period">Juin 2019</span>
+                        <p class="company">Lycée des Horizons - Chazelles-sur-Lyon </p>
+                        <p class="description">Option Sciences Politique</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
